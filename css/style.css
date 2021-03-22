@@ -1,0 +1,405 @@
+body{
+    font-family: 'poppins';
+}
+
+
+*{
+    margin: 0px;
+    padding: 0pxs;
+}
+
+.navbar{
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #01411c;
+    font-weight: 600;
+    margin-left: 50px;
+    position: relative;
+}
+
+.nav-link:hover{
+    color: #01411c;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    background-color: #01411c;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: 0;
+    transition: width .7s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;
+}
+
+#main-slider{
+    position: relative;
+    height: 100vh;
+    padding-top: 115px;
+}
+
+.idol-title h1{
+    color: #01411c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 62px;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+}
+
+.idol-title h3{
+    color: #01411c;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.idol-title span{
+    color: #01411c;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    
+}
+
+.idol-bio{
+    position: absolute;
+    z-index: 10px;
+}
+
+.idol-bio p{
+    color: #01411c;
+    font-size: 15px;
+    margin:10px 0px;
+}
+
+.idol-bio .btn{
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 3px solid #01411c;
+    color: #01411c;
+    background: transparent;
+    background: white;
+    margin-top: 15px;
+    position: relative;
+}
+
+.idol-bio .btn:hover{
+    background: #01411c;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+}
+
+
+.content-pg{
+    position: relative;
+}
+
+.blackbtn{
+    margin: 0px auto !important;
+    display: inline-block;
+}
+
+.idol-img{
+    position: relative;
+    animation: pic 4s linear;
+    animation-delay: 30000s;
+}
+
+@keyframes pic{
+    0%{
+        bottom: -900px;
+    }
+    100%{
+        bottom: 0px;
+    }
+    }
+    
+
+.idol-img img{
+   margin: 0px auto;
+}
+
+.social-icon{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+}
+
+
+.social-icon li{
+    margin-bottom: 10px;
+}
+
+.social-icon li a{
+    color: #01411c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.item{
+    position: relative;
+}
+
+
+.owl-theme .owl-nav{
+    margin-top: 100px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px !important;
+    height: 20px !important;
+    background: white;
+    margin: 0px !important;
+}
+
+.owl-dots button.owl-dot{
+    min-width: inherit;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background: white !important;
+    animation: ripple 1s linear infinite;
+}
+
+
+@keyframes ripple{
+0%{
+    box-shadow: 0px 0px 0px 3px #01411c, 0px 0px 0px 6px rgb(255,255,255 / 0%);
+}
+50%{
+    box-shadow: 0px 0px 0px 3px #01411c, 0px 0px 0px 6px rgb(255,255,255);
+}
+100%{
+    box-shadow: 0px 0px 0px 3px #01411c, 0px 0px 0px 6px rgb(255,255,255 / 0%);
+}
+}
+
+
+button:focus {
+    outline: 0px;
+}
+
+.prev{
+    background: url('../img/left-arrow.png') no-repeat;
+    width: 30px;
+    height: 50px;
+}
+
+.next{
+    background: url('../img/right-arrow.png') no-repeat;
+    width: 80px;
+    height: 50px;
+}
+
+.prev:hover{
+    background: url('../img/l-hover.png') no-repeat;
+}
+
+.next:hover{
+    background: url('../img/r-hover.png') no-repeat;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+}
+
+.owl-dots {
+    display: inline-block;
+    bottom: -155px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+}
+
+.owl-nav{
+    bottom: -190px;
+    position: absolute;
+    right: 0px;
+}
+
+
+/* Animate */
+
+
+.main-pg{
+    background: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+     /* left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px; */
+    animation: mainpg 10s linear;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+@keyframes mainpg{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -3000px;
+        display: none;
+    }
+}
+
+
+#content-pg{
+    visibility: hidden;
+    animation: contentpg 10s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+
+@keyframes contentpg{
+    0%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+
+
+
+body{
+    font-family: 'poppins';
+}
+
+
+
+.main-pg svg{
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+svg .draw {
+    stroke: #01411c;
+    stroke-width: 4px;
+    fill: transparent;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+    animation: animate 10s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes animate{
+    0%{
+        stroke-dashoffset: 1800;
+    }
+    100%{
+        fill: #01411c;
+        stroke-dashoffset: 0;
+        
+    }
+}
+
+
+
+
+.title h1{
+    font-weight: bold;
+    font-size: 124px;
+    text-align: center;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.title .left{
+    left: -700px;
+    animation: left-h1 2s;
+    animation-fill-mode: forwards;
+}
+
+.title .right{
+    right: -700px;
+    animation: right-h1 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes left-h1 {
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 40px;
+    }
+}
+
+@keyframes right-h1 {
+    0%{
+        right: -700px;
+    }
+    100%{
+        right: 40px;
+    }
+}
+
+
+
+.title .left:hover{
+    -webkit-text-fill-color: #01411c;
+}
+
+.title .right:hover{
+    -webkit-text-fill-color: #01411c; 
+}
+
+
+.title .right{
+    right: 40px;
+}
+
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 60% !important;
+    z-index: -3333;
+}
