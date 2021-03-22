@@ -106,7 +106,7 @@ body{
 
 .wave{
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
     z-index: 1;
 }
 
@@ -121,9 +121,9 @@ body{
 }
 
 .idol-img{
-    position: relative;
+    /* position: relative;
     animation: pic 4s linear;
-    animation-delay: 30000s;
+    animation-delay: 30000s; */
 }
 
 @keyframes pic{
@@ -164,7 +164,7 @@ body{
 
 
 .owl-theme .owl-nav{
-    margin-top: 100px !important;
+
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -230,14 +230,14 @@ button:focus {
 
 .owl-dots {
     display: inline-block;
-    bottom: -155px;
+    bottom: -50px;
     position: absolute;
     left: 50%;
     transform: translateX(-51%);
 }
 
 .owl-nav{
-    bottom: -190px;
+    bottom: -80px;
     position: absolute;
     right: 0px;
 }
@@ -276,7 +276,7 @@ button:focus {
 
 
 #content-pg{
-    visibility: hidden;
+    /* visibility: hidden; */
     animation: contentpg 10s linear;
     animation-fill-mode: forwards;
     animation-delay: 5s;
@@ -402,4 +402,11 @@ svg .draw {
     display: block;
     width: 60% !important;
     z-index: -3333;
+}
+
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 2 !important;
 }
